@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header.header{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 20px;
+    background-color: beige;
+}
+
+header.header h2{
+    font-size: 37px;
+}
+
+.add-note-box, .clear-note-box{
+    margin: 0px 10px;
+    padding: 4px 15px;
+    border: 1px solid rgb(246, 226, 197);
+    border-radius: 7px;
+    box-shadow: rgb(0, 0, 0, 0.4) 4px 4px 6px;
+    background-color: rgb(255, 235, 205, 0.8);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------- */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 74px;
+    /* justify-content: center; */
+}
+
+.main-container .noteBox{
+    border: 2px solid rgb(228, 227, 227, 0.6);
+    border-radius: 15px;
+    box-shadow: rgb(0, 0, 0, 0.4) 4px 4px 6px;
+    height: 283px;
+    width: 318px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .noteBox-header{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 15px;
+    margin: 10px 0px;
+}
+
+.main-container .noteBox-title{
+    border: none;
+    width: 70px;
+    font-size: 20px;
+    outline: none;
+}
+.main-container .noteBox-iconbox{
+    width: 100px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-container .noteBox-textbox{
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+    overflow:visible;
+    width: 316px; 
+    height: 234px;
+    font-size: 25px;
+}
+
+.pin-icon, .copy-icon, .delete-icon, .expand-icon{
+    padding: 15px 5px;
+    position: relative;
+    transition-property: all;
+    transition-duration: .1s;
+    bottom: 0px;
+}
+.pin-icon:hover, .copy-icon:hover, .delete-icon:hover, .expand-icon:hover{
+    cursor: pointer;
+    color: rgb(96, 88, 88);
+    bottom: 5px;
+}
+
+/* -------------------------------------- */
+
+.expand-note-box{
+    border: 2px solid rgb(228, 227, 227, 0.6);
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0, 0.4) 4px 4px 6px;
+    /* background-color: rgb(210, 207, 202); */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    z-index: 2;
+    top: 125px;
+    left: 464px;
+}
+
+.expand-textbox{
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+    overflow:visible;
+    width: 601px;
+    height: 431px;
+    font-size: 25px;
+}
+
+.bg{
+    height: 87vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 20px; */
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
