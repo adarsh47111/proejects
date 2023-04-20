@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    border: 1px solid white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(61, 239, 164);
+}
+.btn{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    width: 363px;
+    background-color: transparent;
+}
+select, button{
+    width: 130px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(159, 124, 192);
+    cursor: pointer;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    margin-right: 13px;
+}
+.slider1, .slider2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    cursor: pointer;
+}
+
+input[type="range"]{
+    width: 200px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    flex-grow: 1;
+}
+
+.numBar{
+    height: 0;
+    width: 0;
+    background-color: rgb(206, 206, 206);
+    border: 1px solid rgb(208, 205, 205);
+    order: 0;
+    font-size: 0px;
+}
+.numBar[text]{
+    display: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visulizer</title>
+</head>
+<body>
+    <header class="header">
+        <div class="btn">
+            <select id="dropdown">
+                <option value="iSort"><button>Insertion Sort</button></option>
+                <option value="sSort"><button>Selection Sort</button></option>
+                <option value="bSort"><button>Bubble Sort</button></option>
+            </select>
+            
+            <button onclick="generateArray()">Randomize</button>
+            <button class="start">Start</button>
+        </div>
+        <div class="slider">
+            <div class="slider1">
+                <p>Array Size</p>
+                <div>
+                    <input type="range" id="slider-array-size" value="30" min="1" max="100"> <span class="slider-array-size-val">30</span>
+                </div>
+            </div>
+            <div class="slider2">
+                <p>Visulization Speed</p>
+                <div>
+                    <input type="range" id="slider-speed" value="-500" min="-1000" max="0"> <span class="slider-speed-val">500</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="main-container"></div>
+    <script src="app.js"></script>
+    <script src="sortingAlgo.js"></script>
+</body>
+</html>
